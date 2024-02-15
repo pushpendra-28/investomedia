@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investo Media Track</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/Track Page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<div class="trackWrapper">
+    <header>
+        <div class="nav">                   
+            <div id="navDiv1">
+                <a href="index.html" ><img src="/assets/images/investo media nav image.png" alt="investo media" class="investoMediaNavImg"></a>
+            </div>
+            <div id="navDiv2">
+                <span id="Home" onclick="Home()">Home</span>
+                <span id="Learn" onclick="Learn()">Learn</span>
+                <span id="Track" onclick="Track()">Track</span>
+                <span id="Advice" onclick="Advice()">Advice</span>
+                <span id="Search" onclick="Search()"><i class="fas fa-search"></i></span>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="searchBar">
+            <input type="text" placeholder="Search" list="symbols" id="myInput" disabled class="input">
+            <datalist id="symbols">
+                <!-- Options added by js -->
+            </datalist>
+            <select name="menu" id="dropDown">
+                <option value="Stocks">Stocks</option>
+                
+            </select>
+
+        </div>
+        <div class="viewArea">
+            <h1>Trending Now</h1>
+            <div class="trend"></div>
+        </div>
+        
+        
+
+    </main>
+
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/lm10amri/"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        INVESTOMEDIA Copyright © 2023 Investomedia - All rights reserved  
+        </div>
+        </div>
+        </footer>
+
+
+<script  src="/assets/js/Track Page.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/chartjs-plugin-zoom"></script>
+</body>
+</html>

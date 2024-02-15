@@ -1,0 +1,176 @@
+*,*:after, *:before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+ html, body{
+    /* height:100vh;
+    width:100vw; */
+    overflow-x: hidden;
+    background-color:rgb(15,24,45);
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+
+.wrapper{
+
+    height: 100vh;
+    width:100vw;
+    box-sizing: border-box; /* include padding in element's total height */
+
+
+}
+
+
+header{
+    position: fixed;
+    height: 10%;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box; /* include padding in element's total height */
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: linear-gradient(358deg, black, transparent);
+    /* border-bottom-style: groove;     */
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    width: 100%;
+    height:100%;
+    justify-content: space-around;
+    
+}
+
+#navDiv1{
+    
+    width:50%;
+}
+
+
+#navDiv2{
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    color: rgb(195, 208, 157);
+    align-items: center;
+    width:60%;
+    justify-content: space-evenly;
+    
+
+}
+
+#Home:hover, #Learn:hover, #Track:hover, #Advice:hover {
+    cursor: pointer;
+}
+
+.investoMediaNavImg{
+
+    height: 3rem;
+    width: 6rem;
+    padding-top: 1rem;
+    
+}
+
+.main{
+    padding-left: 10%; 
+    padding-right: 10%;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:8rem;
+}
+
+.main h2{
+    color: white;
+    font-size: 3rem;
+    text-align:center;
+    background-image: linear-gradient(358deg, black, transparent);
+    border-bottom-style: groove;
+    margin-bottom: 2rem;
+}
+
+.main p{
+    color: white;
+    font-size: 1.75rem;
+    padding-bottom: 5rem;
+    text-align: left;
+}
+
+.main li{
+    color: white;
+    font-size: 1.75rem;
+    padding-bottom: 5rem;
+    text-align: left;
+}
+
+.main ul{
+    color: white;
+    font-size: 1.75rem;
+    padding-bottom: 5rem;
+    text-align: left;
+}
+
+
+.footer{
+    width:100%;
+    height: 35%;
+    background:rgb(1,5,13);
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    padding-top: 2.5rem;
+    position: absolute;
+    bottom:-1170rem;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }

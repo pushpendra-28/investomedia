@@ -5,14 +5,14 @@ function Home(){
 }
 
 function Learn(){
-    window.location.href = "/assets/html/Learn Page.html";
+    window.location.href = "/assets/html/Learn_Page.html";
 }
 
 function Track(){
-    window.location.href = "/assets/html/Track Page.html";
+    window.location.href = "/assets/html/Track_Page.html";
 }
 
 function Advice(){
-    window.location.href = "/assets/html/Advice Page.html";
+    window.location.href = "/assets/html/Advice_Page.html";
 }
 

@@ -165,7 +165,7 @@ header{
     
 }
 
-.rating .error{
+.rating.error{
     color :  "red"; 
     position:  "absolute";
     top : "50%";

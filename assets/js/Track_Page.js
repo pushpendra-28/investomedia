@@ -36,19 +36,19 @@ for (let i = 0; i < symbolData.length; i++) {
 
 //nav events
 function Home(){
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
 }
 
 function Learn(){
-    window.location.href = "/assets/html/Learn_Page.html";
+    window.location.href = "./assets/html/Learn_Page.html";
 }
 
 function Track(){
-    window.location.href = "/assets/html/Track_Page.html";
+    window.location.href = "./assets/html/Track_Page.html";
 }
 
 function Advice(){
-    window.location.href = "/assets/html/Advice_Page.html";
+    window.location.href = "./assets/html/Advice_Page.html";
 }
  function Search(){
     let searchBox = document.querySelector(".input");

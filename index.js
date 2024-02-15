@@ -65,7 +65,7 @@ async function printNews(data){
         let image = document.createElement("img");
         image.src = data[i].image;
         image.onerror = function() {
-            image.src = '/assets/images/imageNotFound.png';
+            image.src = 'assets/images/imageNotFound.png';
         }
        
         figure.appendChild(image);

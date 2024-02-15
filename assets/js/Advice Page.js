@@ -98,13 +98,9 @@ function searchStock(inputText){
         catch(error){
             console.log(error)
             let errorHappened = document.querySelector(".rating");
+            errorHappened.classList.add("error");
             errorHappened.innerHTML = "SORRY! We could not find the stock you are looking for";
-            errorHappened.style.color = "red"; 
-            errorHappened.style.position = "absolute";
-            errorHappened.style.top = "50%";
-            errorHappened.style.left = "50%";
-            errorHappened.style.transform = "translate(-50%, -50%)";
-            errorHappened.style.fontSize = "2rem";
+
             // Destroy all existing charts
             for (let key in myCharts) {
                 myCharts[key].destroy();
@@ -136,6 +132,7 @@ function printRating(ratingData, ratingMonthWiseData){
     //main rating
     let rating = document.querySelector(".rating");
     rating.innerHTML = "";
+    rating.classList.remove("error");
     let tr1 = document.createElement("tr");
 
         // Select all td elements inside the trackRating div

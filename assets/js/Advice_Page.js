@@ -87,7 +87,7 @@ function searchStock(inputText){
         //rating
         async function ratingFetch(symbol){
         try{
-            let ratingAPI = await fetch(`https://financialmodelingprep.com/api/v3/rating/${symbol}?apikey=4c16064b55ee6bfa45c683388b741fa2`);
+            let ratingAPI = await fetch(`https://financialmodelingprep.com/api/v3/rating/${symbol}?apikey=2llk2v4os9MiJfQ7noHqnTfEr4TDU8co`);
             let ratingData = await ratingAPI.json();
             let ratingMonthWise = await fetch(`https://finnhub.io/api/v1/stock/recommendation?symbol=${symbol}&token=clp2lu9r01qn0q5te36gclp2lu9r01qn0q5te370`);
             let ratingMonthWiseData = await ratingMonthWise.json();

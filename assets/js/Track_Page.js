@@ -1,5 +1,5 @@
 
-const API_KEY_VANTAGE = "IOS3GIAfLB6HbwxApXpeLhkfU1HaQZHc"
+const API_KEY_VANTAGE = "2llk2v4os9MiJfQ7noHqnTfEr4TDU8co"
 
 
 

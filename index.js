@@ -1,5 +1,3 @@
-const API_KEY_NEWS = "0add5f50ddec43f9ae6719037db43f0a";
-const API_KEY_VANTAGE = "JYAWQKGQWWG86P84"
 
 
 //linking pages together in navigation (click krenge to page change hoga)
@@ -95,7 +93,7 @@ async function printPerformance(){
         console.log(divPerformance);
     
         //top gainers
-        let Tgainer = await fetch('https://financialmodelingprep.com/api/v3/stock_market/gainers?apikey=4c16064b55ee6bfa45c683388b741fa2')
+        let Tgainer = await fetch('https://financialmodelingprep.com/api/v3/stock_market/gainers?apikey=2llk2v4os9MiJfQ7noHqnTfEr4TDU8co')
         let gainer = await Tgainer.json();
         console.log(gainer)
         let gain = document.createElement("div");
@@ -135,7 +133,7 @@ async function printPerformance(){
         
 
         //top losers
-        let Tloser = await fetch('https://financialmodelingprep.com/api/v3/stock_market/losers?apikey=4c16064b55ee6bfa45c683388b741fa2')
+        let Tloser = await fetch('https://financialmodelingprep.com/api/v3/stock_market/losers?apikey=2llk2v4os9MiJfQ7noHqnTfEr4TDU8co')
         let loser = await Tloser.json();
         console.log(loser);
         let lose = document.createElement("div");
@@ -167,7 +165,7 @@ async function printPerformance(){
 
 
         //most active
-        let Mactives = await fetch(`https://financialmodelingprep.com/api/v3/stock/actives?apikey=4c16064b55ee6bfa45c683388b741fa2`)
+        let Mactives = await fetch(`https://financialmodelingprep.com/api/v3/stock/actives?apikey=2llk2v4os9MiJfQ7noHqnTfEr4TDU8co`)
         let Mactive = await Mactives.json();
         console.log(Mactive)
         let active = document.createElement("div");
@@ -208,7 +206,6 @@ async function printPerformance(){
     }
 
     catch(err){
-        console.log('haha')
         console.log(err)
      }
 }
